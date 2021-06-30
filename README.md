@@ -10,8 +10,6 @@ Spring是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器（框�
 
 - 框架下载地址： http://repo.springsource.org/libs-release-local/org/springframework/spring/
 
-- 教程： http://www.yiibai.com/spring
-
 - Git： https://github.com/spring-projects
 
 - 源码： https://github.com/spring-projects/spring-framework
