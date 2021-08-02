@@ -14,7 +14,7 @@ import test.bean.UserService;
 
 public class ApiTest {
     @Test
-    public void test_BeanFactory() throws BeansException {
+    public void test_BeanFactory() throws BeansException, InstantiationException, IllegalAccessException {
         // 1.初始化 BeanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         // 2.注册 bean
@@ -26,5 +26,6 @@ public class ApiTest {
         // 4.第二次获取 bean from Singleton
         UserService userService_singleton = (UserService) beanFactory.getBean("userService");
         userService_singleton.queryUserInfo();
+        System.out.println(userService == userService_singleton);
     }
 }

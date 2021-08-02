@@ -1,8 +1,8 @@
 package com.lomtom.easy_spring.beans.factory.support;
 
 import com.lomtom.easy_spring.beans.BeansException;
+import com.lomtom.easy_spring.beans.factory.BeanFactory;
 import com.lomtom.easy_spring.beans.factory.config.BeanDefinition;
-import com.lomtom.easy_spring.beans.factory.config.SingletonBeanRegistry;
 
 /**
  * @author: LOMTOM
@@ -10,7 +10,7 @@ import com.lomtom.easy_spring.beans.factory.config.SingletonBeanRegistry;
  * @time: 7:50
  */
 
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory{
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
 
     @Override
     public Object getBean(String name) throws BeansException {
@@ -26,5 +26,4 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
     protected abstract BeanDefinition getBeanDefinition(String beanName) throws BeansException;
 
     protected abstract Object createBean(String beanName, BeanDefinition beanDefinition) throws BeansException;
-
 }

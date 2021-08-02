@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @time: 8:01
  */
 
-public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanFactory {
+public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
 
     private Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>();
 
