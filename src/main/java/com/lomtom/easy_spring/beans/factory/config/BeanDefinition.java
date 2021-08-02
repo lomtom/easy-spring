@@ -1,7 +1,7 @@
 package com.lomtom.easy_spring.beans.factory.config;
 
 /**
- * @Author: LOMTOM
+ * @author: LOMTOM
  * @Date: 2021/7/2
  * @Time: 7:38
  */

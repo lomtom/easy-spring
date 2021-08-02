@@ -1,5 +1,8 @@
 package com.lomtom.easy_spring.beans;
 
+/**
+ * @author lomtom
+ */
 public class BeansException extends Exception {
 
     public BeansException(String message) {

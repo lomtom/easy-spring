@@ -14,7 +14,7 @@ import test.bean.UserService;
 
 public class ApiTest {
     @Test
-    public void test_BeanFactory() throws BeansException, InstantiationException, IllegalAccessException {
+    public void test_BeanFactory() throws BeansException {
         // 1.初始化 BeanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         // 2.注册 bean
